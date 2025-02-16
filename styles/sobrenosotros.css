@@ -1,0 +1,84 @@
+.history-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 2rem auto;
+  }
+  
+  .history-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .history-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .founders-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 2rem auto;
+  }
+  
+  .founders-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .founders-section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .founders-section img {
+    border: 3px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem 0;
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #e63946;
+  }
+  
+  @media (max-width: 768px) {
+    .history-section, .founders-section {
+      padding: 1.5rem;
+    }
+  
+    .founders-section .col-md-4 {
+      margin-bottom: 2rem;
+    }
+  }
