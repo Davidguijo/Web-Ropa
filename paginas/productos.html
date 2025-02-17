@@ -14,12 +14,9 @@
 /* Estilos de la barra lateral */
 /* Estilos de la barra lateral */
 .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: sticky;
   width: 250px;
-  height: 100%;
-  background-color: #f8f9fa;
+  height: 90%;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -121,15 +118,8 @@
     </div>
   </div>
 
-  
-
-  <main class="container my-5">
-    <!-- Sección de Catálogo de Productos -->
-<!-- Barra Lateral de Filtros -->
-<aside class="sidebar col-md-3 col-lg-2">
-    <div class="sidebar-title">
-      <h4>Filtrar por</h4>
-    </div>
+  <!--Poner main y aside en un div display flex-->
+  <aside class="sidebar col-md-3 col-lg-2">
     <div class="sidebar-content">
       <ul class="list-group">
         <li class="list-group-item">
@@ -150,16 +140,17 @@
       </ul>
     </div>
   </aside>
-  
+  <main class="container my-5">
   <!-- Sección de Catálogo de Productos -->
   <section class="catalogo-section col-md-9 col-lg-10 text-center" id="catalogo">
     <div class="container">
       <h2 class="section-title">Nuestro Catálogo</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
+
         <!-- Producto 1 -->
         <div class="col camisetas">
           <div class="card h-100">
-            <img src="./imagenes/productos/producto1.webp" class="card-img-top" alt="Producto 1">
+            <img src="../imagenes/index/foto1carrusel.webp" class="card-img-top" alt="Producto 1">
             <div class="card-body">
               <h5 class="card-title">Camiseta Casual</h5>
               <p class="card-text">Camiseta de algodón, cómoda y moderna, perfecta para cualquier ocasión.</p>
@@ -172,7 +163,7 @@
         <!-- Producto 2 -->
         <div class="col jeans">
           <div class="card h-100">
-            <img src="./imagenes/productos/producto2.webp" class="card-img-top" alt="Producto 2">
+            <img src="../imagenes/index/foto2carrusel.webp" class="card-img-top" alt="Producto 2">
             <div class="card-body">
               <h5 class="card-title">Jeans Slim Fit</h5>
               <p class="card-text">Jeans ajustados de excelente calidad, ideales para el día a día.</p>
@@ -185,7 +176,7 @@
         <!-- Producto 3 -->
         <div class="col chaquetas">
           <div class="card h-100">
-            <img src="./imagenes/productos/producto3.webp" class="card-img-top" alt="Producto 3">
+            <img src="../imagenes/index/foto3carrusel.webp" class="card-img-top" alt="Producto 3">
             <div class="card-body">
               <h5 class="card-title">Chaqueta de Invierno</h5>
               <p class="card-text">Chaqueta abrigadora y elegante para los días fríos.</p>
@@ -198,7 +189,7 @@
         <!-- Producto 4 -->
         <div class="col sudaderas">
           <div class="card h-100">
-            <img src="./imagenes/productos/producto4.webp" class="card-img-top" alt="Producto 4">
+            <img src="../imagenes/index/foto4carrusel.webp" class="card-img-top" alt="Producto 4">
             <div class="card-body">
               <h5 class="card-title">Sudadera Deportiva</h5>
               <p class="card-text">Sudadera cómoda para hacer ejercicio o para el descanso en casa.</p>
