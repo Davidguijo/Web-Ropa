@@ -21,6 +21,10 @@
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.principal{
+  display: flex;
+}
+
 .sidebar-title {
   margin-bottom: 20px;
 }
@@ -119,92 +123,92 @@
   </div>
 
   <!--Poner main y aside en un div display flex-->
-  <aside class="sidebar col-md-3 col-lg-2">
-    <div class="sidebar-content">
-      <ul class="list-group">
-        <li class="list-group-item">
-          <input type="checkbox" id="camisetas" value="camisetas" checked> Camisetas
-        </li>
-        <li class="list-group-item">
-          <input type="checkbox" id="jeans" value="jeans" checked> Jeans
-        </li>
-        <li class="list-group-item">
-          <input type="checkbox" id="chaquetas" value="chaquetas" checked> Chaquetas
-        </li>
-        <li class="list-group-item">
-          <input type="checkbox" id="sudaderas" value="sudaderas" checked> Sudaderas
-        </li>
-        <li class="list-group-item">
-          <input type="checkbox" id="accesorios" value="accesorios" checked> Accesorios
-        </li>
-      </ul>
-    </div>
-  </aside>
-  <main class="container my-5">
-  <!-- Sección de Catálogo de Productos -->
-  <section class="catalogo-section col-md-9 col-lg-10 text-center" id="catalogo">
-    <div class="container">
-      <h2 class="section-title">Nuestro Catálogo</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-
-        <!-- Producto 1 -->
-        <div class="col camisetas">
-          <div class="card h-100">
-            <img src="../imagenes/index/foto1carrusel.webp" class="card-img-top" alt="Producto 1">
-            <div class="card-body">
-              <h5 class="card-title">Camiseta Casual</h5>
-              <p class="card-text">Camiseta de algodón, cómoda y moderna, perfecta para cualquier ocasión.</p>
-              <p class="card-text"><strong>$19.99</strong></p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+  <div class="principal">
+    <aside class="sidebar col-md-3 col-lg-2">
+      <div class="sidebar-content">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <input type="checkbox" id="camisetas" value="camisetas" checked> Camisetas
+          </li>
+          <li class="list-group-item">
+            <input type="checkbox" id="jeans" value="jeans" checked> Jeans
+          </li>
+          <li class="list-group-item">
+            <input type="checkbox" id="chaquetas" value="chaquetas" checked> Chaquetas
+          </li>
+          <li class="list-group-item">
+            <input type="checkbox" id="sudaderas" value="sudaderas" checked> Sudaderas
+          </li>
+          <li class="list-group-item">
+            <input type="checkbox" id="accesorios" value="accesorios" checked> Accesorios
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main class="container my-5">
+    <!-- Sección de Catálogo de Productos -->
+    <section class="catalogo-section col-md-9 col-lg-10 text-center" id="catalogo">
+      <div class="container">
+        <h2 class="section-title">Nuestro Catálogo</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+  
+          <!-- Producto 1 -->
+          <div class="col camisetas">
+            <div class="card h-100">
+              <img src="../imagenes/index/foto1carrusel.webp" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Camiseta Casual</h5>
+                <p class="card-text">Camiseta de algodón, cómoda y moderna, perfecta para cualquier ocasión.</p>
+                <p class="card-text"><strong>$19.99</strong></p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <!-- Producto 2 -->
-        <div class="col jeans">
-          <div class="card h-100">
-            <img src="../imagenes/index/foto2carrusel.webp" class="card-img-top" alt="Producto 2">
-            <div class="card-body">
-              <h5 class="card-title">Jeans Slim Fit</h5>
-              <p class="card-text">Jeans ajustados de excelente calidad, ideales para el día a día.</p>
-              <p class="card-text"><strong>$39.99</strong></p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+    
+          <!-- Producto 2 -->
+          <div class="col jeans">
+            <div class="card h-100">
+              <img src="../imagenes/index/foto2carrusel.webp" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Jeans Slim Fit</h5>
+                <p class="card-text">Jeans ajustados de excelente calidad, ideales para el día a día.</p>
+                <p class="card-text"><strong>$39.99</strong></p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <!-- Producto 3 -->
-        <div class="col chaquetas">
-          <div class="card h-100">
-            <img src="../imagenes/index/foto3carrusel.webp" class="card-img-top" alt="Producto 3">
-            <div class="card-body">
-              <h5 class="card-title">Chaqueta de Invierno</h5>
-              <p class="card-text">Chaqueta abrigadora y elegante para los días fríos.</p>
-              <p class="card-text"><strong>$59.99</strong></p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+    
+          <!-- Producto 3 -->
+          <div class="col chaquetas">
+            <div class="card h-100">
+              <img src="../imagenes/index/foto3carrusel.webp" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Chaqueta de Invierno</h5>
+                <p class="card-text">Chaqueta abrigadora y elegante para los días fríos.</p>
+                <p class="card-text"><strong>$59.99</strong></p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+              </div>
             </div>
           </div>
-        </div>
-  
-        <!-- Producto 4 -->
-        <div class="col sudaderas">
-          <div class="card h-100">
-            <img src="../imagenes/index/foto4carrusel.webp" class="card-img-top" alt="Producto 4">
-            <div class="card-body">
-              <h5 class="card-title">Sudadera Deportiva</h5>
-              <p class="card-text">Sudadera cómoda para hacer ejercicio o para el descanso en casa.</p>
-              <p class="card-text"><strong>$29.99</strong></p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+    
+          <!-- Producto 4 -->
+          <div class="col sudaderas">
+            <div class="card h-100">
+              <img src="../imagenes/index/foto4carrusel.webp" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                <h5 class="card-title">Sudadera Deportiva</h5>
+                <p class="card-text">Sudadera cómoda para hacer ejercicio o para el descanso en casa.</p>
+                <p class="card-text"><strong>$29.99</strong></p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+    </main>
+  </div>
   
-  
-  </main>
-
   <footer class="footer">
     <div class="container text-center">
       <p>&copy; 2024 Clothes Corp. Todos los derechos reservados.</p>
