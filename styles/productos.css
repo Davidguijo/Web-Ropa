@@ -1,0 +1,176 @@
+/* Estilos para la barra lateral de filtros */
+.sidebar {
+    position: sticky;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border-right: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+    color: white; /* Texto en blanco */
+    z-index: 10; /* Asegura que esté por encima del carrusel */
+  }
+  
+  .sidebar-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white; /* Texto en blanco */
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  }
+  
+  .sidebar .list-group-item {
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    transition: background-color 0.3s ease;
+    color: white; /* Texto en blanco */
+  }
+  
+  .sidebar .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro al pasar el mouse */
+  }
+  
+  .sidebar .list-group-item input {
+    margin-right: 10px;
+    accent-color: #e63946; /* Color del checkbox */
+  }
+  
+  .sidebar .list-group-item label {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    color: white; /* Texto en blanco */
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  }
+  
+  /* Estilos adicionales para el menú lateral */
+  .sidebar .list-group-item input:checked + label {
+    font-weight: bold;
+    color: #e63946; /* Rojo elegante al seleccionar */
+  }
+  
+  /* Animación de entrada */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .sidebar {
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  /* Estilos para el contenido principal */
+  .catalogo-section {
+    flex: 1;
+    padding: 20px;
+    color: white; /* Texto en blanco */
+  }
+  
+  .catalogo-section h2 {
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .catalogo-section .card {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+    border-radius: 20px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .catalogo-section .card:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+  }
+  
+  .catalogo-section .card-title {
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+    font-size: 1.5rem;
+    color: white; /* Texto en blanco */
+  }
+  
+  .catalogo-section .card-text {
+    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8); /* Texto semi-transparente */
+  }
+  
+  .catalogo-section .btn-primary {
+    background-color: #e63946; /* Rojo elegante */
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .catalogo-section .btn-primary:hover {
+    background-color: #d62828; /* Rojo más oscuro al pasar el mouse */
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      box-shadow: none;
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+    }
+  
+    .catalogo-section {
+      margin-left: 0;
+    }
+  }
+
+  .footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5rem 0;
+    position: relative;
+    z-index: 10;
+    margin-top: auto;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .footer-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-icons a:hover {
+    color: #e63946;
+  }
+  
+  @media (max-width: 768px) {
+    .history-section, .founders-section {
+      padding: 1.5rem;
+    }
+  
+    .founders-section .col-md-4 {
+      margin-bottom: 2rem;
+    }
+  }
