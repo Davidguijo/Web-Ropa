@@ -1,4 +1,11 @@
 /* Estilos para la barra lateral de filtros */
+body {
+  margin: 0;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
 .sidebar {
     position: sticky;
     top: 0;
@@ -242,3 +249,96 @@
       margin-left: 0;
     }
   }
+
+  /* Estilos para el menú de filtros (sidebar) */
+.sidebar {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+  padding: 2rem;
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  transition: transform 0.3s ease-in-out;
+  border-right: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+  z-index: 1050;
+}
+
+
+
+/* Título de la sección de filtros */
+.sidebar-title {
+  font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+/* Lista de filtros */
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  color: white;
+  border: none;
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.list-group-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro al pasar el mouse */
+  transform: translateY(-5px); /* Efecto hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Estilos para el checkbox */
+.list-group-item input[type="checkbox"] {
+  margin-right: 1rem;
+}
+
+/* Estilo para la etiqueta */
+.list-group-item label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+/* Animación de entrada para la sidebar */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sidebar {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Estilo del botón de filtro */
+.btn-filter {
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  background-color: #e63946; /* Rojo elegante */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-filter:hover {
+  background-color: #d62828; /* Rojo más oscuro al pasar el mouse */
+  transform: translateY(-5px); /* Efecto hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
