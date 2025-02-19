@@ -242,3 +242,64 @@
       margin-left: 0;
     }
   }
+
+main.container-fluid {
+  margin: 0;
+  padding: 0;
+  flex: 1; /* Asegura que el main ocupe todo el espacio disponible */
+}
+
+/* Estilos para las filas y columnas */
+.row.g-0 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para las imágenes y botones */
+.col-md-6.position-relative {
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.col-md-6.position-relative img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+  transition: transform 0.3s ease; /* Efecto de zoom al pasar el mouse */
+}
+
+.col-md-6.position-relative:hover img {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.col-md-6.position-relative .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(230, 57, 70, 0.8); /* Rojo con transparencia */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.col-md-6.position-relative .btn:hover {
+  background-color: rgba(214, 40, 40, 0.9); /* Rojo más oscuro al pasar el mouse */
+  transform: translate(-50%, -50%) scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .col-md-6.position-relative {
+    height: 50vh; /* En móviles, cada imagen ocupa la mitad de la pantalla */
+  }
+
+  .col-md-6.position-relative .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
