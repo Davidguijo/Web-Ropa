@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg">
       <img src="../imagenes/logo.png" alt="Icono Tienda" class="navbar-logo" height="300px">
       <div class="navbar-brand">
-        <h2 class="navbar-title">Clothes Corp</h2>
+        <h2 class="navbar-title"><a class=titulo href="../index.html">Clothes Corp</a></h2>
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -92,47 +92,33 @@
       </div>
     </section>
 
-    <section class="map-section my-5">
-      <h2 class="contact-title">¿Dónde Estamos?</h2>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6339.877484550743!2d-6.012844423600171!3d37.391280934157315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d421eeb1993%3A0x8bac543d1b973081!2sCentro%20Comercial%20TORRE%20SEVILLA!5e0!3m2!1ses!2ses!4v1739472588277!5m2!1ses!2ses"
-          width="100%"
-          height="400"
-          style="border:0;"
-          allowfullscreen=""
-          loading="lazy">
-        </iframe>
-      </div>
-    </section>
-
-    <h2 class="text-center mb-4">Contáctanos</h2>
     <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6 form-container">
+      <section class="contact-info text-center my-5">
+        <h2 class="contact-title">Contáctanos</h2>
         <form id="contactForm">
           <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
+            <label for="nombre" class="form-label form-label-left">Nombre</label> <!-- Añadido form-label-left -->
             <div class="input-group">
               <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
               <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
             </div>
           </div>
           <div class="mb-3">
-            <label for="email" class="form-label">Correo Electrónico</label>
+            <label for="email" class="form-label form-label-left">Correo Electrónico</label> <!-- Añadido form-label-left -->
             <div class="input-group">
               <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
               <input type="email" class="form-control" id="email" placeholder="tucorreo@example.com" required>
             </div>
           </div>
           <div class="mb-3">
-            <label for="asunto" class="form-label">Asunto</label>
+            <label for="asunto" class="form-label form-label-left">Asunto</label> <!-- Añadido form-label-left -->
             <div class="input-group">
               <span class="input-group-text"><i class="bi bi-chat-fill"></i></span>
               <input type="text" class="form-control" id="asunto" placeholder="Motivo del mensaje" required>
             </div>
           </div>
           <div class="mb-3">
-            <label for="message" class="form-label">Mensaje</label>
+            <label for="message" class="form-label form-label-left">Mensaje</label> <!-- Añadido form-label-left -->
             <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
           </div>
           <div class="text-center">
@@ -142,9 +128,23 @@
         <div id="confirmacionMensaje" class="alert alert-success mt-3 text-center" style="display: none;">
           ✅ Se ha registrado su petición, intentaremos responderle con la mayor brevedad posible.
         </div>
-      </div>
+      </section>
     </div>
   </main>
+
+  <section class="map-section my-5">
+    <h2 class="contact-title">¿Dónde Estamos?</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6339.877484550743!2d-6.012844423600171!3d37.391280934157315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126d421eeb1993%3A0x8bac543d1b973081!2sCentro%20Comercial%20TORRE%20SEVILLA!5e0!3m2!1ses!2ses!4v1739472588277!5m2!1ses!2ses"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container text-center">
