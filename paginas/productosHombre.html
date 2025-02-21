@@ -12,6 +12,38 @@
   <link rel="stylesheet" href="../styles/productos.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+  <style>
+    html, body {
+      height: 100%; /* Asegura que el html y body ocupen toda la altura de la ventana */
+      margin: 0; /* Elimina el margen predeterminado */
+    }
+
+    body {
+      display: flex; /* Usa Flexbox */
+      flex-direction: column; /* Organiza los elementos en columna */
+    }
+
+    main {
+      flex: 1; /* Hace que el main ocupe el espacio restante */
+    }
+    
+    .container.my-5 {
+      flex: 1; /* Asegura que el contenido del main ocupe el espacio restante */
+    }
+
+    .card-img-top{
+      height: 300px; /* Altura fija para todas las imágenes */
+      object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+      width: 100%;
+    }
+
+    .footer {
+      color: white; /* Color del texto del footer */
+      padding: 1rem 0; /* Espaciado interno del footer */
+      text-align: center; /* Centra el texto del footer */
+    }
+  </style>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const filters = document.querySelectorAll('.sidebar input[type="checkbox"]');
@@ -117,49 +149,109 @@
           <h2 class="section-title">Nuestro Catálogo</h2>
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Producto 1 -->
-            <div class="col camisetas">
+            <div class="col chaquetas">
               <div class="card h-100">
-                <img src="../imagenes/index/foto1carrusel.webp" class="card-img-top" alt="Producto 1">
+                <img src="../imagenes/hombre/chaquetas/chaqueta2.webp" class="card-img-top" alt="Producto 1">
                 <div class="card-body">
-                  <h5 class="card-title">Camiseta Casual</h5>
-                  <p class="card-text">Camiseta de algodón, cómoda y moderna, perfecta para cualquier ocasión.</p>
-                  <p class="card-text"><strong>$19.99</strong></p>
+                  <h5 class="card-title">Chaqueta de Tenista</h5>
+                  <p class="card-text">Chaqueta de algodón, cómoda y moderna, perfecta</p>
+                  <p class="card-text"><strong>$99.99</strong></p>
                   <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
               </div>
             </div>
             <!-- Producto 2 -->
-            <div class="col jeans">
+            <div class="col chaquetas">
               <div class="card h-100">
-                <img src="../imagenes/index/foto2carrusel.webp" class="card-img-top" alt="Producto 2">
+                <img src="../imagenes/hombre/chaquetas/chaqueta1.webp" class="card-img-top" alt="Producto 2">
                 <div class="card-body">
-                  <h5 class="card-title">Jeans Slim Fit</h5>
-                  <p class="card-text">Jeans ajustados de excelente calidad, ideales para el día a día.</p>
-                  <p class="card-text"><strong>$39.99</strong></p>
+                  <h5 class="card-title">Chaqueta de cuero Grizzy</h5>
+                  <p class="card-text">Cárdigan regular fit tejido en hilatura de algodón. </p>
+                  <p class="card-text"><strong>$39.95</strong></p>
                   <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
               </div>
             </div>
             <!-- Producto 3 -->
-            <div class="col chaquetas">
+            <div class="col camisetas">
               <div class="card h-100">
-                <img src="../imagenes/index/foto3carrusel.webp" class="card-img-top" alt="Producto 3">
+                <img src="../imagenes/hombre/camisetas/camiseta1.jpg" class="card-img-top" alt="Producto 3">
                 <div class="card-body">
-                  <h5 class="card-title">Chaqueta de Invierno</h5>
-                  <p class="card-text">Chaqueta abrigadora y elegante para los días fríos.</p>
-                  <p class="card-text"><strong>$59.99</strong></p>
+                  <h5 class="card-title">Camiseta Blanca</h5>
+                  <p class="card-text">Camsita oversize muy pero que muy chula</p>
+                  <p class="card-text"><strong>$9.99</strong></p>
                   <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
               </div>
             </div>
             <!-- Producto 4 -->
+            <div class="col camisetas">
+              <div class="card h-100">
+                <img src="../imagenes/hombre/camisetas/camiseta2.webp" class="card-img-top" alt="Producto 4">
+                <div class="card-body">
+                  <h5 class="card-title">Camiseta Tadeo</h5>
+                  <p class="card-text">Camiseta para (bbc) bodas, bautizos y comuniones</p>
+                  <p class="card-text"><strong>$29.99</strong></p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 3 -->
             <div class="col sudaderas">
               <div class="card h-100">
-                <img src="../imagenes/index/foto4carrusel.webp" class="card-img-top" alt="Producto 4">
+                <img src="../imagenes/hombre/sudaderas/sudadera1.webp" class="card-img-top" alt="Producto 3">
                 <div class="card-body">
-                  <h5 class="card-title">Sudadera Deportiva</h5>
-                  <p class="card-text">Sudadera cómoda para hacer ejercicio o para el descanso en casa.</p>
-                  <p class="card-text"><strong>$29.99</strong></p>
+                  <h5 class="card-title">Sudadera de Invierno</h5>
+                  <p class="card-text">Chaqueta abrigadora y elegante para los días fríos.</p>
+                  <p class="card-text"><strong>$639.99</strong></p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+             <!-- Producto 3 -->
+            <div class="col sudaderas">
+              <div class="card h-100">
+                <img src="../imagenes/hombre/sudaderas/sudadera2.avif" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                  <h5 class="card-title">Sudadera Verde Moco</h5>
+                  <p class="card-text">Sudadera chulisima, es del betis, es verde.</p>
+                  <p class="card-text"><strong>$189.99</strong></p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col jeans">
+              <div class="card h-100">
+                <img src="../imagenes/hombre/jeans/jeans1.jpg" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                  <h5 class="card-title">Vaqueros Rajaos</h5>
+                  <p class="card-text">Vaqueros para que te entre el fresquito de la mañana.</p>
+                  <p class="card-text"><strong>$39.99</strong></p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col jeans">
+              <div class="card h-100">
+                <img src="../imagenes/hombre/jeans/jeans2.avif" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                  <h5 class="card-title">Jeans estrechos</h5>
+                  <p class="card-text">Jeans que son muy bonitos, ademas son entre azul y negro</p>
+                  <p class="card-text"><strong>$79.99</strong></p>
+                  <a href="#" class="btn btn-primary">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- Producto 4 -->
+            <div class="col accesorios">
+              <div class="card h-100">
+                <img src="../imagenes/hombre/accesorios/cartera.avif" class="card-img-top" alt="Producto 3">
+                <div class="card-body">
+                  <h5 class="card-title">Cartera para dinero</h5>
+                  <p class="card-text">Cartera que te vale si tienes dinero como si no lo tienes</p>
+                  <p class="card-text"><strong>$119.99</strong></p>
                   <a href="#" class="btn btn-primary">Ver más</a>
                 </div>
               </div>
@@ -182,142 +274,140 @@
   </footer>
 
   <!-- Modal de Perfil -->
-<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-slideout">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="profileModalLabel">Mi Perfil</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Sección de la imagen de perfil -->
-        <div class="text-center mb-4">
-          <img src="./imagenes/foto_perfil.jpg" alt="Foto de perfil" class="profile-picture mb-3" style="width: 100px; height: 100px; border-radius: 50%;">
-          <h4 class="mb-2">Juan Pérez</h4>
-          <p class="text-muted">juan.perez@example.com</p>
+  <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="profileModalLabel">Mi Perfil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <div class="modal-body">
+          <!-- Sección de la imagen de perfil -->
+          <div class="text-center mb-4">
+            <img src="./imagenes/foto_perfil.jpg" alt="Foto de perfil" class="profile-picture mb-3" style="width: 100px; height: 100px; border-radius: 50%;">
+            <h4 class="mb-2">Juan Pérez</h4>
+            <p class="text-muted">juan.perez@example.com</p>
+          </div>
 
-        <!-- Sección de datos personales -->
-        <div class="mb-4">
-          <h5 class="mb-3">Datos Personales</h5>
-          <div class="mb-3">
-            <label class="form-label">Nombre Completo</label>
-            <input type="text" class="form-control" value="Juan Pérez" readonly>
+          <!-- Sección de datos personales -->
+          <div class="mb-4">
+            <h5 class="mb-3">Datos Personales</h5>
+            <div class="mb-3">
+              <label class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" value="Juan Pérez" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" value="juan.perez@example.com" readonly>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Teléfono</label>
+              <input type="tel" class="form-control" value="+34 123 456 789" readonly>
+            </div>
           </div>
-          <div class="mb-3">
-            <label class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" value="juan.perez@example.com" readonly>
-          </div>
-          <div class="mb-3">
-            <label class="form-label">Teléfono</label>
-            <input type="tel" class="form-control" value="+34 123 456 789" readonly>
-          </div>
-        </div>
 
-        <!-- Sección de saldo -->
-        <div class="mb-4">
-          <h5 class="mb-3">Saldo</h5>
-          <div class="d-flex align-items-center">
-            <span class="fs-4 me-2">💰</span>
-            <h3 class="mb-0">$1,250.00</h3>
+          <!-- Sección de saldo -->
+          <div class="mb-4">
+            <h5 class="mb-3">Saldo</h5>
+            <div class="d-flex align-items-center">
+              <span class="fs-4 me-2">💰</span>
+              <h3 class="mb-0">$1,250.00</h3>
+            </div>
+            <p class="text-muted">Saldo disponible en tu cuenta.</p>
           </div>
-          <p class="text-muted">Saldo disponible en tu cuenta.</p>
-        </div>
 
-        <!-- Botones de acción -->
-        <div class="text-center">
-          <button class="btn btn-primary btn-lg w-100 mb-2 hover-effect">
-            <i class="fas fa-edit"></i> Editar Perfil
-          </button>
-          <button class="btn btn-danger btn-lg w-100 hover-effect">
-            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
-          </button>
+          <!-- Botones de acción -->
+          <div class="text-center">
+            <button class="btn btn-primary btn-lg w-100 mb-2 hover-effect">
+              <i class="fas fa-edit"></i> Editar Perfil
+            </button>
+            <button class="btn btn-danger btn-lg w-100 hover-effect">
+              <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+            </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- Modal de Iniciar sesión -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-slideout">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <!-- Formulario de inicio de sesión -->
-        <div id="loginForm">
-          <form>
-            <div class="mb-3">
-              <label for="username" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="username" required>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 hover-effect">Iniciar Sesión</button>
-          </form>
-          
-          <!-- Enlace para ir al formulario de registro -->
-          <p class="mt-3 text-center">
-            ¿No tienes cuenta? <a href="#" id="switchToRegister">Registrarme</a>
-          </p>
-
-          <!-- Enlace para "¿Ha olvidado su contraseña?" -->
-          <p class="mt-3 text-center">
-            <a href="#" id="forgotPassword">¿Ha olvidado su contraseña?</a>
-          </p>
-
-          <!-- Botones de inicio de sesión con Google y Facebook -->
-          <div class="text-center mt-4">
-            <button class="btn btn-primary w-100 mb-2 btn-lg shadow-sm hover-effect">
-              <i class="fab fa-google"></i> Iniciar sesión con Google
-            </button>
-            <button class="btn btn-primary w-100 mb-2 btn-lg shadow-sm hover-effect">
-              <i class="fab fa-facebook"></i> Iniciar sesión con Facebook
-            </button>
-          </div>
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-
-        <!-- Formulario de registro (oculto inicialmente) -->
-        <div id="registerForm" style="display: none;">
-          <form>
-            <div class="mb-3">
-              <label for="fullName" class="form-label">Nombre Completo</label>
-              <input type="text" class="form-control" id="fullName" required>
-            </div>
-            <div class="mb-3">
-              <label for="newUser" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="newUser" required>
-            </div>
-            <div class="mb-3">
-              <label for="phone" class="form-label">Teléfono</label>
-              <input type="tel" class="form-control" id="phone" required>
-            </div>
-            <div class="mb-3">
-              <label for="newPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="newPassword" required>
-            </div>
-            <div class="mb-3">
-              <label for="ConfirmPassword" class="form-label">Confirmar Contraseña</label>
-              <input type="password" class="form-control" id="ConfirmPassword" required>
-            </div>
+        <div class="modal-body">
+          <!-- Formulario de inicio de sesión -->
+          <div id="loginForm">
+            <form>
+              <div class="mb-3">
+                <label for="username" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="username" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 hover-effect">Iniciar Sesión</button>
+            </form>
             
-            <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 hover-effect">Registrarme</button>
-          </form>
-          <p class="mt-3 text-center">
-            ¿Ya tienes cuenta? <a href="#" id="switchToLogin">Iniciar Sesión</a>
-          </p>
+            <!-- Enlace para ir al formulario de registro -->
+            <p class="mt-3 text-center">
+              ¿No tienes cuenta? <a href="#" id="switchToRegister">Registrarme</a>
+            </p>
+
+            <!-- Enlace para "¿Ha olvidado su contraseña?" -->
+            <p class="mt-3 text-center">
+              <a href="#" id="forgotPassword">¿Ha olvidado su contraseña?</a>
+            </p>
+
+            <!-- Botones de inicio de sesión con Google y Facebook -->
+            <div class="text-center mt-4">
+              <button class="btn btn-primary w-100 mb-2 btn-lg shadow-sm hover-effect">
+                <i class="fab fa-google"></i> Iniciar sesión con Google
+              </button>
+              <button class="btn btn-primary w-100 mb-2 btn-lg shadow-sm hover-effect">
+                <i class="fab fa-facebook"></i> Iniciar sesión con Facebook
+              </button>
+            </div>
+          </div>
+
+          <!-- Formulario de registro (oculto inicialmente) -->
+          <div id="registerForm" style="display: none;">
+            <form>
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="fullName" required>
+              </div>
+              <div class="mb-3">
+                <label for="newUser" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="newUser" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="phone" required>
+              </div>
+              <div class="mb-3">
+                <label for="newPassword" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="newPassword" required>
+              </div>
+              <div class="mb-3">
+                <label for="ConfirmPassword" class="form-label">Confirmar Contraseña</label>
+                <input type="password" class="form-control" id="ConfirmPassword" required>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 hover-effect">Registrarme</button>
+            </form>
+            <p class="mt-3 text-center">
+              ¿Ya tienes cuenta? <a href="#" id="switchToLogin">Iniciar Sesión</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
