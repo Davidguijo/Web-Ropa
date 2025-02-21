@@ -181,6 +181,63 @@
     </div>
   </footer>
 
+  <!-- Modal de Perfil -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-slideout">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel">Mi Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Sección de la imagen de perfil -->
+        <div class="text-center mb-4">
+          <img src="./imagenes/foto_perfil.jpg" alt="Foto de perfil" class="profile-picture mb-3" style="width: 100px; height: 100px; border-radius: 50%;">
+          <h4 class="mb-2">Juan Pérez</h4>
+          <p class="text-muted">juan.perez@example.com</p>
+        </div>
+
+        <!-- Sección de datos personales -->
+        <div class="mb-4">
+          <h5 class="mb-3">Datos Personales</h5>
+          <div class="mb-3">
+            <label class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" value="Juan Pérez" readonly>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" value="juan.perez@example.com" readonly>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" value="+34 123 456 789" readonly>
+          </div>
+        </div>
+
+        <!-- Sección de saldo -->
+        <div class="mb-4">
+          <h5 class="mb-3">Saldo</h5>
+          <div class="d-flex align-items-center">
+            <span class="fs-4 me-2">💰</span>
+            <h3 class="mb-0">$1,250.00</h3>
+          </div>
+          <p class="text-muted">Saldo disponible en tu cuenta.</p>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="text-center">
+          <button class="btn btn-primary btn-lg w-100 mb-2 hover-effect">
+            <i class="fas fa-edit"></i> Editar Perfil
+          </button>
+          <button class="btn btn-danger btn-lg w-100 hover-effect">
+            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Modal de Iniciar sesión -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-slideout">
@@ -216,7 +273,7 @@
 
           <!-- Botones de inicio de sesión con Google y Facebook -->
           <div class="text-center mt-4">
-            <button class="btn btn-danger w-100 mb-2 btn-lg shadow-sm hover-effect">
+            <button class="btn btn-primary w-100 mb-2 btn-lg shadow-sm hover-effect">
               <i class="fab fa-google"></i> Iniciar sesión con Google
             </button>
             <button class="btn btn-primary w-100 mb-2 btn-lg shadow-sm hover-effect">
@@ -261,9 +318,10 @@
 </div>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/fichero.js"></script>
+  <script src="../js/fichero.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {

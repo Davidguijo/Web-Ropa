@@ -323,3 +323,164 @@ body {
   color: white;
 }
 
+.button_slide {
+  color: #FFF;
+  border: 2px solid #FFF;
+  padding: 18px 36px;
+  display: inline-block;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #d62828;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;  
+  margin-top: 30px;
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #d62828;
+}
+
+/* Estilos para el ícono de cuenta */
+.account-icon {
+  font-size: 2rem; /* Tamaño del ícono */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.account-icon:hover {
+  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.dropdown-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para el modal de perfil */
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e63946; /* Borde rojo elegante */
+}
+
+.modal-body h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.modal-body h5 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.modal-body .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.modal-body .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: none;
+}
+
+.modal-body .btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.modal-body .btn-primary {
+  background-color: #e63946; /* Rojo elegante */
+  border: none;
+}
+
+.modal-body .btn-primary:hover {
+  background-color: #d62828; /* Rojo más oscuro al pasar el mouse */
+}
+
+.modal-body .btn-danger {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.modal-body .btn-danger:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Estilos para el ícono de perfil */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Ajusta la imagen al contenedor */
+  border: 2px solid #e63946; /* Borde rojo elegante */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+}
+
+.profile-icon:hover {
+  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra al pasar el mouse */
+}
+
+/* Estilos para el Toast */
+/* Estilos para el Toast */
+#successToast {
+  position: fixed;
+  top: 20px; /* Posición en la parte superior */
+  left: 50%;
+  transform: translateX(-50%); /* Centrado horizontal */
+  z-index: 1000;
+  min-width: 300px; /* Ancho mínimo del Toast */
+  text-align: center;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.toast-body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.btn-close {
+  filter: invert(1); /* Cambia el color del botón de cierre a blanco */
+}
