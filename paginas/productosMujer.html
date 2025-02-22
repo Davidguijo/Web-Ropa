@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sobre Nosotros - Clothes Corp</title>
   <link rel="icon" href="../imagenes/icon.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="../styles/index.css">
@@ -13,34 +16,85 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <style>
-    html, body {
-      height: 100%; /* Asegura que el html y body ocupen toda la altura de la ventana */
-      margin: 0; /* Elimina el margen predeterminado */
+    html,
+    body {
+      height: 100%;
+      /* Asegura que el html y body ocupen toda la altura de la ventana */
+      margin: 0;
+      /* Elimina el margen predeterminado */
     }
 
     body {
-      display: flex; /* Usa Flexbox */
-      flex-direction: column; /* Organiza los elementos en columna */
+      display: flex;
+      /* Usa Flexbox */
+      flex-direction: column;
+      /* Organiza los elementos en columna */
     }
 
     main {
-      flex: 1; /* Hace que el main ocupe el espacio restante */
-    }
-    
-    .container.my-5 {
-      flex: 1; /* Asegura que el contenido del main ocupe el espacio restante */
+      flex: 1;
+      /* Hace que el main ocupe el espacio restante */
     }
 
-    .card-img-top{
-      height: 300px; /* Altura fija para todas las imágenes */
-      object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+    .container.my-5 {
+      flex: 1;
+      /* Asegura que el contenido del main ocupe el espacio restante */
+    }
+
+    .card-img-top {
+      height: 300px;
+      /* Altura fija para todas las imágenes */
+      object-fit: cover;
+      /* Asegura que la imagen cubra el espacio sin distorsionarse */
       width: 100%;
     }
 
+    .sidebar-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff1500;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .sidebar-link:hover {
+      background-color: #4b0606;
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      animation: bounce 1s;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-10px);
+      }
+
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+
     .footer {
-      color: white; /* Color del texto del footer */
-      padding: 1rem 0; /* Espaciado interno del footer */
-      text-align: center; /* Centra el texto del footer */
+      color: white;
+      /* Color del texto del footer */
+      padding: 1rem 0;
+      /* Espaciado interno del footer */
+      text-align: center;
+      /* Centra el texto del footer */
     }
   </style>
 
@@ -65,15 +119,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   <script src="../js/fichero.js"></script>
 </head>
+
 <body>
-  
+
   <header>
     <nav class="navbar navbar-expand-lg">
       <img src="../imagenes/logo.png" alt="Icono Tienda" class="navbar-logo" height="300px">
       <div class="navbar-brand">
         <h2 class="navbar-title"><a class=titulo href="../index.html">Clothes Corp</a></h2>
       </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
@@ -82,7 +138,7 @@
             <a href="../index.html" class="nav-link">Inicio</a>
           </li>
           <li class="nav-item">
-            <a href="sobrenosotros.html" class="nav-link" >Sobre Nosotros</a>
+            <a href="sobrenosotros.html" class="nav-link">Sobre Nosotros</a>
           </li>
           <li class="nav-item">
             <a href="" class="nav-link btn-index">Productos</a>
@@ -141,6 +197,7 @@
             <label for="accesorios">Accesorios</label>
           </li>
         </ul>
+        <a href="productosPrincipal.html" class="sidebar-link">Volver a Productos</a>
       </div>
     </aside>
     <main class="container my-5">
@@ -208,7 +265,7 @@
                 </div>
               </div>
             </div>
-             <!-- Producto 3 -->
+            <!-- Producto 3 -->
             <div class="col sudaderas">
               <div class="card h-100">
                 <img src="../imagenes/hombre/sudaderas/sudadera2.avif" class="card-img-top" alt="Producto 3">
@@ -261,7 +318,7 @@
       </section>
     </main>
   </div>
-  
+
   <footer class="footer">
     <div class="container text-center">
       <p>&copy; 2024 Clothes Corp. Todos los derechos reservados.</p>
@@ -284,7 +341,8 @@
         <div class="modal-body">
           <!-- Sección de la imagen de perfil -->
           <div class="text-center mb-4">
-            <img src="./imagenes/foto_perfil.jpg" alt="Foto de perfil" class="profile-picture mb-3" style="width: 100px; height: 100px; border-radius: 50%;">
+            <img src="./imagenes/foto_perfil.jpg" alt="Foto de perfil" class="profile-picture mb-3"
+              style="width: 100px; height: 100px; border-radius: 50%;">
             <h4 class="mb-2">Juan Pérez</h4>
             <p class="text-muted">juan.perez@example.com</p>
           </div>
@@ -352,7 +410,7 @@
               </div>
               <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 hover-effect">Iniciar Sesión</button>
             </form>
-            
+
             <!-- Enlace para ir al formulario de registro -->
             <p class="mt-3 text-center">
               ¿No tienes cuenta? <a href="#" id="switchToRegister">Registrarme</a>
@@ -397,7 +455,7 @@
                 <label for="ConfirmPassword" class="form-label">Confirmar Contraseña</label>
                 <input type="password" class="form-control" id="ConfirmPassword" required>
               </div>
-              
+
               <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 hover-effect">Registrarme</button>
             </form>
             <p class="mt-3 text-center">
@@ -437,4 +495,5 @@
   </script>
 
 </body>
+
 </html>
