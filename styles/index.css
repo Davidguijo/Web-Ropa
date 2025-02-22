@@ -484,3 +484,93 @@ body {
 .btn-close {
   filter: invert(1); /* Cambia el color del botón de cierre a blanco */
 }
+
+
+/* Estilos para el modal de perfil */
+.modal-dialog.modal-dialog-slideout {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semi-transparente */
+}
+
+.modal-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Efecto de desenfoque */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Borde sutil */
+  border-radius: 0; /* Sin bordes redondeados */
+}
+
+.modal-header {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  color: white;
+  border-bottom: none;
+  padding: 1rem;
+}
+
+.modal-title {
+  font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  color: white;
+}
+
+.modal-body h4 {
+  font-family: 'Playfair Display', serif; /* Tipografía elegante */
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.modal-body .form-label {
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.modal-body .form-control {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde sutil */
+  color: white;
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.modal-body .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro al enfocar */
+  border-color: rgba(255, 255, 255, 0.4); /* Borde más claro al enfocar */
+  box-shadow: none;
+}
+
+.modal-body .btn {
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna */
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.modal-body .btn-primary {
+  background-color: #e63946; /* Rojo elegante */
+  border: none;
+}
+
+.modal-body .btn-primary:hover {
+  background-color: #d62828; /* Rojo más oscuro al pasar el mouse */
+}

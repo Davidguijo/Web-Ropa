@@ -96,3 +96,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const accountIcon = document.getElementById("accountIcon");
+  const profileModal = new bootstrap.Modal(document.getElementById("profileModal"));
+
+  if (accountIcon) {
+    accountIcon.addEventListener("click", function (e) {
+      e.preventDefault();
+      profileModal.show();
+    });
+  }
+});
