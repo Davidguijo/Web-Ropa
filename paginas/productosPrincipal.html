@@ -14,17 +14,17 @@
 
   <style>
     html, body {
-      height: 100%; /* Asegura que el html y body ocupen toda la altura de la ventana */
-      margin: 0; /* Elimina el margen predeterminado */
+      height: 100%;
+      margin: 0;
     }
 
     body {
-      display: flex; /* Usa Flexbox */
-      flex-direction: column; /* Organiza los elementos en columna */
+      display: flex;
+      flex-direction: column;
     }
 
     main {
-      flex: 1; /* Hace que el main ocupe el espacio restante */
+      flex: 1;
     }
 
     .category-selection {
@@ -138,13 +138,11 @@
     </div>
   </div>
 
-  <!-- Contenido principal entre el header y el footer -->
   <main class="category-selection">
     <div class="container">
       <h2 class="section-title text-center mb-5">Nuestras Colecciones</h2>
       
       <div class="row g-4">
-        <!-- Sección Hombre -->
         <div class="col-md-6">
           <div class="category-card position-relative">
             <img src="../imagenes/index/miss-51677_10.jpg" class="category-img" alt="Ropa de Hombre">
@@ -158,7 +156,6 @@
           </div>
         </div>
 
-        <!-- Sección Mujer -->
         <div class="col-md-6">
           <div class="category-card position-relative">
             <img src="../imagenes/index/principalMujer.png" class="category-img" alt="Ropa de Mujer">
@@ -186,7 +183,6 @@
     </div>
   </footer>
 
-  <!-- Modal de Iniciar sesión -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-slideout">
       <div class="modal-content">
@@ -195,7 +191,6 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!-- Formulario de inicio de sesión -->
           <div id="loginForm">
             <form>
               <div class="mb-3">
@@ -209,17 +204,14 @@
               <button type="submit" class="btn btn-primary btn-lg w-100 mb-2 hover-effect">Iniciar Sesión</button>
             </form>
             
-            <!-- Enlace para ir al formulario de registro -->
             <p class="mt-3 text-center">
               ¿No tienes cuenta? <a href="#" id="switchToRegister">Registrarme</a>
             </p>
 
-            <!-- Enlace para "¿Ha olvidado su contraseña?" -->
             <p class="mt-3 text-center">
               <a href="#" id="forgotPassword">¿Ha olvidado su contraseña?</a>
             </p>
 
-            <!-- Botones de inicio de sesión con Google y Facebook -->
             <div class="text-center mt-4">
               <button class="btn btn-primary w-100 mb-2 btn-lg shadow-sm hover-effect">
                 <i class="fab fa-google"></i> Iniciar sesión con Google
@@ -230,7 +222,6 @@
             </div>
           </div>
 
-          <!-- Formulario de registro (oculto inicialmente) -->
           <div id="registerForm" style="display: none;">
             <form>
               <div class="mb-3">

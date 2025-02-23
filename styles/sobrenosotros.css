@@ -104,7 +104,6 @@ body {
   }
 }
 
-/* Animación de flotación */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -114,7 +113,6 @@ body {
   }
 }
 
-/* Añade estas reglas para el hover */
 .history-section, .founders-section {
   transition: all 0.3s ease;
 }

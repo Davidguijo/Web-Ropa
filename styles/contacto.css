@@ -6,9 +6,9 @@ body {
 }
 
 .form-container {
-  max-width: 1200px; /* Ajusta este valor según el ancho de los otros elementos */
-  margin: 0 auto; /* Centrar el formulario */
-  padding: 20px; /* Añadir un poco de padding si es necesario */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .form-container {
@@ -96,11 +96,11 @@ body {
     color: #e63946;
   }
   .form-label-left {
-    text-align: left; /* Alinea el texto a la izquierda */
-    display: block; /* Asegura que el label ocupe toda la línea */
-    margin-bottom: 0.5rem; /* Añade un margen inferior para separar del input */
-    font-family: 'Poppins', sans-serif; /* Mantén la fuente consistente */
-    font-weight: 500; /* Opcional: ajusta el peso de la fuente */
+    text-align: left;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
   .contact-title {
     font-family: 'Playfair Display', serif;
@@ -159,47 +159,43 @@ body {
   }
 
   .contact-info, .map-section {
-    transition: all 0.3s ease; /* Añadimos una transición suave para el hover */
+    transition: all 0.3s ease;
   }
   
   .contact-info:hover, .map-section:hover {
-    transform: scale(1.05); /* Aumentamos el tamaño de la caja ligeramente */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Añadimos una sombra para darle un efecto de elevación */
-    border-color: rgba(255, 255, 255, 0.5); /* Cambiamos el color del borde */
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
     
   }
   
-  /* Botón de Enviar Mensaje */
 .btn-primary:hover {
   background-color: #d62828;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadimos sombra al botón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Iconos del mapa */
 .map-container iframe:hover {
-  transform: scale(1.02); /* Aumentamos el tamaño del mapa */
-  transition: all 0.3s ease; /* Añadimos transición para suavizar el cambio */
+  transform: scale(1.02);
+  transition: all 0.3s ease;
   
 }
 
 .footer-icons a:hover {
-  color: #e63946; /* Cambia el color cuando se pasa el ratón sobre el icono */
-  transform: scale(1.2); /* Aumenta ligeramente el tamaño del icono */
-  transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+  color: #e63946;
+  transform: scale(1.2);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover sobre los campos del formulario */
 .form-control:hover {
   background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5); /* Cambiamos el color del borde */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Añadimos una sombra suave */
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover en los campos del formulario cuando están enfocados */
 .form-control:focus {
-  border-color: #e63946; /* Cambiamos el borde al color principal cuando se enfoca */
-  box-shadow: 0 0 10px rgba(230, 57, 70, 0.5); /* Añadimos sombra al enfocar */
+  border-color: #e63946;
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
 }
 
 
